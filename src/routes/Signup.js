@@ -39,7 +39,7 @@ const Signup = () => {
       <form onSubmit={registerUser} className='max-w-[400px] w-30 mx-auto bg-white p-8'>
         <h1 className='text-4xl font-bold text-center py-8'>Sign Up Now</h1>
         <input
-          className='border relative bg-gray-100 p-2 mb-4 w-full'
+          className='border bg-gray-100 p-2 mb-4 w-full'
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text"
@@ -47,7 +47,7 @@ const Signup = () => {
         />
 
         <input
-          className='border relative bg-gray-100 p-2 mb-4 w-full'
+          className='border  bg-gray-100 p-2 mb-4 w-full'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="text"
@@ -56,7 +56,7 @@ const Signup = () => {
         />
 
         <input
-          className='border relative bg-gray-100 p-2 mb-4 w-full'
+          className='border  bg-gray-100 p-2 mb-4 w-full'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
@@ -65,14 +65,14 @@ const Signup = () => {
         />
 
         <input
-          className='border relative bg-gray-100 p-2 w-full'
+          className='border  bg-gray-100 p-2 w-full'
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           type="text"
           placeholder='Current Location'
           required
         />
-        <input type='submit' value="Register" className='w-full py-3 mt-8 bg-green-600 hover:bg-gray-500 relative text-white mb-4'/>
+        <input type='submit' value="Register" className='w-full py-3 mt-8 bg-green-600 hover:bg-gray-500  text-white mb-4'/>
         <Link to="/login"  className='text-black hover:text-green-500'>
           Already have an account? Login Here
         </Link>
