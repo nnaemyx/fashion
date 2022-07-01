@@ -23,10 +23,22 @@ const Navbar = () => {
     <div className='flex justify-between items-center h-24  max-w-[1240px] mx-0 px-4 text-white relative'>
         <img src={Logo} alt="Logo" className='w-auto h-8 sm:h-14' />
         <ul className='hidden md:flex'>
-            <li className='p-4 hover:text-green-700'>Home</li>
-            <li className='p-4 hover:text-green-700'>All products</li>
-            <li className='p-4 hover:text-green-700'>About</li>
-            <li className='p-4 hover:text-green-700'>Contact</li>
+            <Link to="/">
+                <li className='p-4 hover:text-green-700'>Home</li>
+            </Link>
+            
+            <Link to="/allproducts">
+                <li className='p-4 hover:text-green-700'>Allproducts</li>
+            </Link>
+
+            <Link to="/about">
+                <li className='p-4 hover:text-green-700'>About</li>
+            </Link>
+
+            <Link to="/contact">
+                <li className='p-4 hover:text-green-700'>Contact</li>
+            </Link>
+            
             <li className='pt-2.5 hover:text-green-700'>
                 <Menu as="div" className="relative inline-block text-left z-10">
                     <div>
@@ -93,10 +105,21 @@ const Navbar = () => {
         <div className={nav ? 'fixed left-0 top-0 w-[60%] bg-[#2F2F2F] h-full border-r-gray-900 ease-in-out duration-500' :  'fixed left-[-100%]'}>
             <ul className=' p-4'>
                 <img src={Logo} alt="Logo" className='w-auto h-8 sm:h-10' />
-                <li className='p-4 border-b border-gray-600'>Home</li>
-                <li className='p-4 border-b border-gray-600'>All Products</li>
-                <li className='p-4 border-b border-gray-600'>About</li>
-                <li className='p-4 border-b border-gray-600'>Contact</li>
+                <Link to="/">
+                    <li className='p-4 hover:text-green-700'>Home</li>
+                </Link>
+            
+                <Link to="/allproducts">
+                    <li className='p-4 hover:text-green-700'>Allproducts</li>
+                </Link>
+
+                <Link to="/about">
+                    <li className='p-4 hover:text-green-700'>About</li>
+                </Link>
+
+                <Link to="/contact">
+                    <li className='p-4 hover:text-green-700'>Contact</li>
+                </Link>
                 <li className='pt-2.5 border-b border-gray-600'>
                 <Menu as="div" className="relative inline-block text-left z-10">
                     <div>
